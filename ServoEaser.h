@@ -33,7 +33,11 @@
 #include <WProgram.h>
 #endif
 
+#ifdef ESP32
+#include <ESP32Servo.h>
+#else
 #include <Servo.h>
+#endif
 
 // simple struct to encapsulate a servo move 
 typedef struct _servoMove {
